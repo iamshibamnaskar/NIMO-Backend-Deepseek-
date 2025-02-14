@@ -7,7 +7,7 @@ app = FastAPI()
 
 # Allow all origins for now (you can specify a list of allowed origins later)
 origins = [
-    "http://localhost:5173",
+    "*",
 ]
 
 
