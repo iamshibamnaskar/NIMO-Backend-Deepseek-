@@ -22,7 +22,7 @@ app.add_middleware(
 async def generate_stream(message: str):
     """Streams the response from Ollama chat in real-time."""
     stream = chat(
-        model='deepseek-r1:8b',
+        model='deepseek-r1:1.5b',
         messages=[{'role': 'user', 'content': f'{message}'}],
         stream=True,
     )
